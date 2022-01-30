@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <inpu class="container">
+        <h3>Generate a random Password</h3>
+        <p id= "field"></p>
+        <div >
+            <li class="l-val length">
+                <span >
+                    <label>Length: </label> 
+                    <p id="val">8</p>
+                </span>
+                <input id="range" type="range" min="4" max="30" value="8">
+            </li>
+            <l class="l-val choices">
+                <span>
+                    <label >Uppercase:</label>
+                    <input class="upper check" type="checkbox" checked>
+                </span>
+                <span>
+                    <label >Lowercase:</label>
+                    <input class="lower check" type="checkbox" checked>
+                </span>
+                
+                <span>
+                    <label for="">Numbers:</label>
+                    <input class="number check" type="checkbox" checked>
+                </span>
+                <span>
+                    <label for="">Special Characters:</label>
+                    <input class="special check" type="checkbox"checked>
+                </span>
+            </li>
+
+        </div>
+            
+        <button class="btn">Generate</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

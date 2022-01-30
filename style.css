@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Nunito&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background:rgba(44, 185, 171);
+    height:100vh;
+    width:100vw;
+    display:grid;
+    place-items:center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    padding:15px;
+    min-height:20rem;
+    min-width:35rem;
+    background:rgb(44, 185, 171);
+    color:white;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    
+}
+h3{
+    padding-top:20px;
+    font-size: 30px;
+    font-weight: 15px;
+}
+#field{
+    letter-spacing: 2px;
+    padding-top:7px;
+    text-align:center;
+    margin-top:35px;
+    min-height:30px;
+    border-radius:10px;
+    font-size: large;
+    background:white;
+    color:black;
+}
+.btn{
+    margin-top:25px;
+    width:190px;
+    min-height:35px;
+    background:rgb(241, 153, 38);
+    color:white;
+    border-radius:25px;
+    align-self: center;
+}
+#range{
+    margin-top:15px;
+    width:350px;
+    align-self:center;
+}
+.l-val{
+    
+    display:flex;
+    place-items:center;
+    justify-content:space-around;
+    align-items:center;
+    font-size: 15px;
+    font-weight: 5px;
+}
+.l-val span{
+    padding-top:4px;
+    display:flex;
+    flex-direction: row;
+    place-items: center;
+}
+#val{
+    margin-left:10px;
+    height:30px;
+    width: 40px;
+    background:white;
+    color:black;
+    border-radius:10px;
+    align-self:center;
+    text-align:center;
+    padding-top:8px;
+}
+.choices{
+    margin:30px;
+}
+.check{
+    margin-right:10px;
+    width:2rem;
+    height:1.5rem;
+    border-radius: 50%;
+    border:1px solid green;
+}
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+        transform:scale(0.75);
+        transition:0.2s ease-in-out;
+        width:100vw;
+    }
+    .container{
+        margin:0;
+        padding:0;
+        place-items: center;
+    }
+    #field,.l-val{
+        width:30rem;
+    } 
+    #range{
+        width:100%;
+        margin-left:3rem;
+        align-self:center;
+    }
+    .length{
+        height:80px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+} 

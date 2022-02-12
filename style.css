@@ -5,7 +5,10 @@
     padding:0;
 }
 html{
-    background:rgba(44, 185, 171);
+    /* background:rgba(44, 185, 171); */
+    /* background:rgb(30, 33, 33); */
+    background-image: url('./img/background.svg');
+    background-size: cover;
     height:100vh;
     width:100vw;
     display:grid;
@@ -15,9 +18,12 @@ html{
 
 .container{
     padding:15px;
-    min-height:20rem;
-    min-width:35rem;
-    background:rgb(44, 185, 171);
+    min-height:23rem;
+    min-width:39rem;
+    /* background-image: url('./background.svg'); */
+    /* background-size: cover; */
+    /* background:rgb(44, 185, 171); */
+    background-color: rgba(77, 119, 116, 0.356);
     color:white;
     text-align:center;
     display:flex;
@@ -44,7 +50,8 @@ h3{
     margin-top:25px;
     width:190px;
     min-height:35px;
-    background:rgb(241, 153, 38);
+    /* background:rgb(241, 153, 38); */
+    background:rgba(26, 148, 249, 0.986);
     color:white;
     border-radius:25px;
     align-self: center;
@@ -87,10 +94,8 @@ h3{
     margin-right:10px;
     width:2rem;
     height:1.5rem;
-    border-radius: 50%;
-    border:1px solid green;
 }
-@media (max-width:600px){
+@media (max-width:650px){
     body{
         overflow-x: hidden;
         transform:scale(0.75);
@@ -99,7 +104,7 @@ h3{
     }
     .container{
         margin:0;
-        padding:0;
+        padding:10px 0;
         place-items: center;
     }
     #field,.l-val{

@@ -9,7 +9,7 @@ let lower = document.querySelector('.lower')
 const range = document.getElementById("range");
 range.addEventListener('change',()=>{
         document.getElementById("val").innerHTML = range.value;
-        //assigns password length from value of the range
+        //assigns password length as value of range
         length = range.value;
 });
 //validation to make sure at least one choice is selected
@@ -32,11 +32,13 @@ let generate_random = (add_number,add_special,add_upper,add_lower)=>{
                 if(!add_special){       // if numbers is not checked and special character is not checked
                         return 1;       // return 1 which will be a letter
                 }
-                else{                   // numbers is not checked but special character is checked
+                else if (add_lower && add_special){                   // numbers is not checked but special character is checked
                         do{
                         random = Math.floor(Math.random()*100 % 3);
                         }while(random ===  0 ) // generate a new number if random equals 0
                         return random;  // return letter or symbol
+                }else if(add_special && !add_lower){
+                        return 2;
                 }
         }else if (!add_special){
                 // numbers and letters

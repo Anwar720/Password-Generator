@@ -7,7 +7,7 @@ let lower = document.querySelector('.lower')
 
 // Displays selected password length 
 const range = document.getElementById("range");
-range.addEventListener('change',()=>{
+range.oninput = (()=>{
         document.getElementById("val").innerHTML = range.value;
         //assigns password length as value of range
         length = range.value;
